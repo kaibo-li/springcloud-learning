@@ -14,10 +14,14 @@ spring:
   redis:
     database: 0
     port: 6379
-    host: localhost
-    password:
+    host: 192.168.56.20
+    password: kaibo.li
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+
+logging:
+  level:
+    com.macro.cloud: debug
